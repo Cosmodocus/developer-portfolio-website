@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark {
+	background: #1b1a1a;
+	color: #fff;
+}
+
+.light {
+	background: #fff;
+	color: #000;
+}
+
+li:hover {
+	color: rgb(31, 198, 198);
+}
+
+.navbar-dark {
+	background: #1c1a1a;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.navbar-light {
+	background: #fff;
+	color: #000;
+}

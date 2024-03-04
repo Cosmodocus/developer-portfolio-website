@@ -1,51 +1,63 @@
 import React from 'react';
+import HTML from '../assets/html.png';
+import CSS from '../assets/css.png';
+import JavaScript from '../assets/js.png';
+import ReactJS from '../assets/react.png';
+import Tailwind from '../assets/tailwind.svg';
+import Git from '../assets/git.svg';
 
 const Skills = () => {
 	return (
 		<div className=' py-32 flex flex-col items-center gap-8 justify-center'>
 			<h1 className='text-4xl font-bold '>Skills</h1>
 			<div className='grid md:grid-cols-3  grid-cols-1 gap-16'>
-				<div className=' w-[400px] flex flex-col gap-2 border rounded-lg shadow-md p-8'>
+				<div className=' w-[300px] flex flex-col gap-2 border items-center rounded-lg shadow-md p-8'>
 					<h2 className='text-2xl font-bold'>HTML</h2>
-					<p>Semantic HTML5</p>
-					<p>Tags & Elements</p>
-					<p>Attributes</p>
+					<img
+						className='w-[100px]'
+						src={HTML}
+						alt=''
+					/>
 				</div>
-				<div className=' w-[400px] flex flex-col gap-2 border rounded-lg shadow-md p-8'>
+				<div className=' w-[300px] flex flex-col gap-2 border items-center rounded-lg shadow-md p-8'>
 					<h2 className='text-2xl font-bold'>CSS</h2>
-					<p>Selectors & Pseudo-Selectors</p>
-					<p>Colour & Typography</p>
-					<p>Flex and Grid Layouts</p>
+					<img
+						className='w-[100px]'
+						src={CSS}
+						alt=''
+					/>
 				</div>
-				<div className=' w-[400px] flex flex-col gap-2 border rounded-lg shadow-md p-8'>
+				<div className=' w-[300px] flex flex-col gap-2 border items-center rounded-lg shadow-md p-8'>
 					<h2 className='text-2xl font-bold'>JavaScript</h2>
-					<p>DOM Manipulation</p>
-					<p>Event Listeners</p>
-					<p>ES6+ Methods</p>
-					<p>Asynchronous Programming</p>
-					<p>API Integration</p>
+					<img
+						className='w-[100px]'
+						src={JavaScript}
+						alt=''
+					/>
 				</div>
-				<div className=' w-[400px] flex flex-col gap-2 border rounded-lg shadow-md p-8'>
-					<h2 className='text-2xl font-bold'>React.js</h2>
-					<p>JSX</p>
-					<p>Props & State</p>
-					<p>Conditional Rendering</p>
-					<p>List Rendering</p>
-					<p>Hooks</p>
+				<div className=' w-[300px] flex flex-col gap-2 border items-center rounded-lg shadow-md p-8'>
+					<h2 className='text-2xl font-bold'>React</h2>
+					<img
+						className='w-[100px]'
+						src={ReactJS}
+						alt=''
+					/>
 				</div>
-				<div className=' w-[400px] flex flex-col gap-2 border rounded-lg shadow-md p-8'>
+				<div className=' w-[300px] flex flex-col gap-2 border items-center rounded-lg shadow-md p-8'>
 					<h2 className='text-2xl font-bold'>Tailwind CSS</h2>
-					<p>Utility-Classes</p>
-					<p>Mobile-First Responsive Design</p>
-					<p>Tailwind Presets</p>
+					<img
+						className='w-[100px]'
+						src={Tailwind}
+						alt=''
+					/>
 				</div>
-				<div className=' w-[400px] flex flex-col gap-2 border rounded-lg shadow-md p-8'>
-					<h2 className='text-2xl font-bold'>UI/UX Design</h2>
-					<p>Colour Theory</p>
-					<p>Typography</p>
-					<p>Layout</p>
-					<p>Visual Hierarchy</p>
-					<p>Balance</p>
+				<div className=' w-[300px] flex flex-col gap-2 border items-center rounded-lg shadow-md p-8'>
+					<h2 className='text-2xl font-bold'>Version Control</h2>
+					<img
+						className='w-[100px]'
+						src={Git}
+						alt=''
+					/>
 				</div>
 			</div>
 		</div>

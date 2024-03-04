@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import DarkLightBtn from './DarkLightBtn';
+import Hamburger from './Hamburger';
 
 const Navbar = () => {
+	const [isDarkMode, setIsDarkMode] = useState(false);
+
+	const toggleIsDarkMode = () => {
+		setIsDarkMode(!isDarkMode);
+	};
 	return (
-		<nav className='w-full flex justify-between px-8 items-center py-4 bg-background text-text shadow-md fixed'>
-			<h1 className='text-3xl font-bold'>Logo</h1>
-			<ul className='flex gap-8 '>
+		<nav
+			className={
+				isDarkMode
+					? 'navbar-dark w-full flex justify-between px-8 items-center py-4  text-text shadow-md fixed'
+					: 'navbar-light w-full flex justify-between px-8 items-center py-4 text-text shadow-md fixed'
+			}
+		>
+			<h1 className='text-3xl font-bold'>RezTech</h1>
+			<ul className=' gap-8 md:flex hidden'>
 				<li className='font-semibold'>
 					<Link to='/'>Home</Link>
 				</li>
@@ -16,6 +29,8 @@ const Navbar = () => {
 					<Link to='/contacts'>Contact</Link>
 				</li>
 			</ul>
+			<DarkLightBtn className='md:flex hidden' />
+			<Hamburger />
 		</nav>
 	);
 };
