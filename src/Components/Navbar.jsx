@@ -9,6 +9,7 @@ const Navbar = () => {
 	const toggleIsDarkMode = () => {
 		setIsDarkMode(!isDarkMode);
 	};
+
 	return (
 		<nav
 			className={
@@ -17,7 +18,7 @@ const Navbar = () => {
 					: 'navbar-light w-full flex justify-between px-8 items-center py-4 text-text shadow-md fixed'
 			}
 		>
-			<h1 className='text-3xl font-bold'>RezTech</h1>
+			<h1 className='text-3xl font-bold text-[#1fc6c6]'>RezTech</h1>
 			<ul className=' gap-8 md:flex hidden'>
 				<li className='font-semibold'>
 					<Link to='/'>Home</Link>

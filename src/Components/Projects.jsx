@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
 	return (
 		<div className='w-full flex flex-col items-center justify-center py-32'>
-			<h1 className='text-4xl font-bold pb-8'>Featured Projects</h1>
+			<h1 className='text-4xl font-bold pb-8 '>Featured Projects</h1>
 			<div className='grid md:grid-cols-2 grid-cols-1 gap-16'>
 				{/* PROJECT 1 */}
-				<div className=' flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+				<div className='mx-2 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[230px]'
 						src={Finance}
@@ -45,7 +45,7 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* PROJECT 2 */}
-				<div className='flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+				<div className=' mx-2 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[230px]'
 						src={Pokedex}
@@ -76,7 +76,7 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* PROJECT 3 */}
-				<div className='flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+				<div className=' mx-2 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[230px]'
 						src={Netflix}
@@ -107,7 +107,7 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* PROJECT 4 */}
-				<div className='flitems-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+				<div className=' mx-2 flex flex-col items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[230px]'
 						src={Youtube}
